@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container ">
     <img :src="image" alt="" />
     <h3>{{ title }}</h3>
     <p>{{ text }}</p>
@@ -17,4 +17,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+</style>

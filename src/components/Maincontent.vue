@@ -14,7 +14,7 @@
       />
     </div>
 
-    <div class="bg-secondary">
+    <div class=" text-white">
       <img src="../../public/Images/icon-5.png" alt="" />
       <h2>MEET OUR DOCTORS</h2>
       <hr />
@@ -36,9 +36,9 @@
 
     <div>
       <img src="../../public/Images/icon-6.png" alt="" />
-      <h2>OUR HEALTH SERVICES</h2>
-      <hr />
-      <p>
+      <h2 class="p-3">OUR HEALTH SERVICES</h2>
+      <div class="under-line"></div>
+      <p class="container fs-3 mb-5">
         Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
         Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab
         Illo Inventore Veritatis Et Quasi Architecto Beatae
@@ -51,6 +51,11 @@
       </div>
     </div>
 
+ 
+
+    <div>
+      <VideoFacilities/>
+    </div>
     <div class="row">
       <div class="d-flex bg-success text-center justify-content-around">
         <Facilities
@@ -62,9 +67,15 @@
         />
       </div>
     </div>
+
     <div>
       <Appointments/>
     </div>
+
+    <div>
+      <Slider/>
+    </div>
+    
   </div>
 </template>
 
@@ -76,6 +87,8 @@ import HealthServices from "../components/HealthServices.vue";
 import Welcome from "./Welcome.vue";
 import Facilities from "../components/Facilities.vue";
 import Appointments from "../components/Appointment.vue";
+import VideoFacilities from "../components/VideoFacilities.vue";
+import Slider from "../components/Slider.vue";
 
 export default {
   name: "Maincontent",
@@ -86,6 +99,8 @@ export default {
     HealthServices,
     Facilities,
     Appointments,
+    VideoFacilities,
+    Slider,
   },
   data() {
     return {
@@ -95,4 +110,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.under-line{
+  border-top: 3px solid gray;
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto
+}
+</style>

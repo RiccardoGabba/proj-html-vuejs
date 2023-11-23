@@ -94,6 +94,26 @@ export const store = reactive({
             text: 'At vero eos et accusamus et iusto od',
             button: 'Leanr More'
         },
+    ],
+    Avatar: [
+        {
+            image: '../../public/Images/client-logos-1.png'
+        },
+        {
+            image: '../../public/Images/client-logos-2.png'
+        },
+        {
+            image: '../../public/Images/client-logos-3.png'
+        },
+        {
+            image: '../../public/Images/client-logos-4.png'
+        },
+        {
+            image: '../../public/Images/client-logos-3.png'
+        },
+        {
+            image: '../../public/Images/client-logos-2.png'
+        },
     ]
 
 })

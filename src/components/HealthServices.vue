@@ -23,4 +23,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>.under-line{
+  border-top: 3px solid white;
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto
+}
+</style>

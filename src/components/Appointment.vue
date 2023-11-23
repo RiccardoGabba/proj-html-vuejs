@@ -1,13 +1,17 @@
 <template>
-  <h2>Make An Appointment</h2>
-  <hr />
-  <p>
+  <div class="bg-appointemnt text-white ">
+  <h2 class="h1">Make An Appointment</h2>
+  <div class="d-flex row">
+  <div class="under-line my-4">
+  </div>
+  <p class="">
     Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
     Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore
     Veritatis Et Quasi Architecto Beatae
   </p>
+</div>
 
-  <form class="bg-black">
+  <form>
     <div class="form-row d-flex aling-items-center justify-content-center">
       <div class="form-group w-25">
         <input
@@ -50,6 +54,7 @@
       </div>
     </div>
   </form>
+</div>
 </template>
 
 <script>
@@ -64,4 +69,18 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bg-appointemnt{
+  background-image: url(../../public/Images/make-an-appointment.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.under-line{
+  border-top: 3px solid white;
+  width: 30%;
+  padding: 20px;
+  margin: 0 auto
+}
+
+
+</style>
