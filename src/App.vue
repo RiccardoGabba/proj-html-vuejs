@@ -1,25 +1,27 @@
 <template>
-  
-  <div class="bg-header">
-    <Header />
-  </div>
+  <Header />
 
+  <Maincontent />
 </template>
 
 <script>
+import { store } from "./data/store";
+import Maincontent from "./components/Maincontent.vue";
 import Header from "./components/Header.vue";
 export default {
   name: "app",
 
   components: {
     Header,
+    Maincontent,
+  },
+
+  data() {
+    return {
+      store,
+    };
   },
 };
 </script>
 
-<style lang="scss" scoped>
-  .bg-header {
-    background-image: url(../public/Images/header-image-homepage.jpg);
-    background-size: 100%;
-  }
-</style>
+<style lang="scss" scoped></style>

@@ -1,5 +1,5 @@
 <template>
-  <header class="text-white">
+  <header class="text-white bg-header">
     <div class="d-flex justify-content-between p-4">
       <div>
         <img src="../../public/Images/medical_logo_1x_light.png" alt="" />
@@ -67,4 +67,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+ .bg-header {
+    background-image: url(../../public/Images/header-image-homepage.jpg);
+    height: 100vh;
+  }
+</style>
