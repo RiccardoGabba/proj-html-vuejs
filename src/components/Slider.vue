@@ -7,7 +7,7 @@
     class="mySwiper"
   >
     <swiper-slide v-for="el in store.Avatar">
-    <div class="bg-black">
+    <div class="bg-slider container">
       <img :src="el.image">
       
     </div>
@@ -49,4 +49,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.bg-slider{
+  background-color: rgb(55, 150, 195);
+}
+</style>

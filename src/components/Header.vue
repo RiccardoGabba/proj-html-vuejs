@@ -9,7 +9,7 @@
         <h5 class="mx-3">About</h5>
         <h5 class="mx-3">Departments</h5>
         <h5 class="mx-3">Articles</h5>
-        <button class="button-1 "><h5>Make Appointment</h5></button>
+        <button class="btn button-1 text-white"><h5>Make Appointment</h5></button>
       </div>
     </div>
 

@@ -1,5 +1,6 @@
 <template>
-  <div class="text-center">
+  <div class="text-center mt-5">
+    <div class="container">
     <h2 class="h1">Welcome To Avada Health</h2>
     <p class="fs-3 p-5 container">
       Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
@@ -13,8 +14,8 @@
         :image="el.image"
       />
     </div>
-
-    <div class="bg-light">
+  </div>
+    <div class="bg-light ">
       <img src="../../public/Images/icon-5.png" alt="" />
       <h2>MEET OUR DOCTORS</h2>
       <div class="under-line"></div>
@@ -34,7 +35,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="mt-5">
       <img src="../../public/Images/icon-6.png" alt="" />
       <h2 class="p-3">OUR HEALTH SERVICES</h2>
       <div class="under-line"></div>
@@ -44,21 +45,19 @@
         Illo Inventore Veritatis Et Quasi Architecto Beatae
       </p>
     </div>
-
-    <div class="row">
-      <div class="col-4 " v-for="el in store.Services">
-        <HealthServices 
-        :image="el.image" :title="el.title" :text="el.text" />
+    <div class="container">
+      <div class="row">
+        <div class="col-4 mb-5" v-for="el in store.Services">
+          <HealthServices :image="el.image" :title="el.title" :text="el.text" />
+        </div>
       </div>
     </div>
 
- 
-
     <div>
-      <VideoFacilities/>
+      <VideoFacilities />
     </div>
     <div class="row">
-      <div class="d-flex bg-success text-center justify-content-around">
+      <div class="d-flex  text-center justify-content-around">
         <Facilities
           v-for="el in store.Facilities"
           :title="el.title"
@@ -70,13 +69,12 @@
     </div>
 
     <div>
-      <Appointments/>
+      <Appointments />
     </div>
 
     <div>
-      <Slider/>
+      <Slider />
     </div>
-    
   </div>
 </template>
 
@@ -112,11 +110,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.under-line{
+.under-line {
   border-top: 3px solid gray;
   width: 30%;
   padding: 20px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 
