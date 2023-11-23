@@ -57,7 +57,7 @@
       <VideoFacilities/>
     </div>
     <div class="row">
-      <div class="d-flex  text-center justify-content-around bg-facilities p-5">
+      <div class="d-flex  text-center justify-content-around bg-facilities p-5 text-white">
         <Facilities 
           v-for="el in store.Facilities"
           :title="el.title"

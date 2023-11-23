@@ -1,10 +1,10 @@
 <template>
     
-    <div >
+    <div>
         <h2>{{ title }}</h2>
         <img :src="image">
         <p>{{ text }}</p>
-        <button type="button" class="btn btn-outline-primary">{{ button }}</button>
+        <button type="button" class="btn btn-outline-light">{{button}}</button>
     </div>
 
 </template>

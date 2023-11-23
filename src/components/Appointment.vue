@@ -4,11 +4,13 @@
   <div class="d-flex row">
   <div class="under-line my-4">
   </div>
-  <p class="">
+  
+  <p class="fs-3 ">
     Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
     Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore
     Veritatis Et Quasi Architecto Beatae
   </p>
+
 </div>
 
   <form>
