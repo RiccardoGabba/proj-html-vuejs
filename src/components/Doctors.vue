@@ -1,13 +1,13 @@
 <template>
-  <div class="col-3 m-5 bg-black">
-    <img :src="image" />
+  <div class="col-3 m-4  overflow-hidden  bg-black">
+    <img :src="image"/>
     <div class="text-start ">
     <h3>{{ name }}</h3>
     <h5>{{ role }}</h5>
     <p>{{ text }}</p>
-    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-    <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i>
-    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-facebook-f m-2" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-x-twitter m-2" style="color: #ffffff;"></i>
+    <i class="fa-brands fa-instagram m-2" style="color: #ffffff;"></i>
     </div>
   </div>
 </template>
