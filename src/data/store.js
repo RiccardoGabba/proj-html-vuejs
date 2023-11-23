@@ -74,7 +74,26 @@ export const store = reactive({
             title: 'MEDICAL COUNSELING',
             text: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas'
         },      
+    ],
+    Facilities: [
+        {
+            title:'Emergency Care',
+            image:'../../public/Images/wave-divider.png',
+            text: 'At vero eos et accusamus et iusto od',
+            button: 'Leanr More'
+        },
+        {
+            title:'Emergency Care',
+            image:'../../public/Images/wave-divider.png',
+            text: 'At vero eos et accusamus et iusto od',
+            button: 'Leanr More'
+        },
+        {
+            title:'Emergency Care',
+            image:'../../public/Images/wave-divider.png',
+            text: 'At vero eos et accusamus et iusto od',
+            button: 'Leanr More'
+        },
     ]
-
 
 })

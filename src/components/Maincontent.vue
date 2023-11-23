@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div>
     <h2>Welcome To Avada Health</h2>
     <p>
       Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
@@ -33,6 +33,7 @@
         />
       </div>
     </div>
+    
     <div>
       <img src="../../public/Images/icon-6.png" alt="" />
       <h2>OUR HEALTH SERVICES</h2>
@@ -43,8 +44,10 @@
         Illo Inventore Veritatis Et Quasi Architecto Beatae
       </p>
     </div>
+
     <div class="row">
       <div class="col-4" v-for="el in store.Services">
+
         <HealthServices 
         :image="el.image" 
         :title="el.title" 
@@ -52,7 +55,16 @@
       </div>
     </div>
 
-    
+    <div class="row">
+      <div class="d-flex bg-success text-center justify-content-around">
+    <Facilities v-for="el in store.Facilities"
+    :title="el.title"
+    :image="el.image"
+    :text="el.text" 
+    :button="el.button"
+    />
+  </div>
+</div>
   </div>
 
 
@@ -61,9 +73,10 @@
 <script>
 import { store } from "../data/store";
 
-import ServicesComponents from ".//Servicescomponents.vue";
 import Doctors from "../components/Doctors.vue";
 import HealthServices from "../components/HealthServices.vue";
+import ServicesComponents from ".//Servicescomponents.vue";
+import Facilities from "../components/Facilities.vue";
 
 export default {
   name: "Maincontent",
@@ -72,6 +85,7 @@ export default {
     ServicesComponents,
     Doctors,
     HealthServices,
+    Facilities,
   },
   data() {
     return {

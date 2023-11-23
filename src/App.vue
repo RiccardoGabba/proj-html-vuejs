@@ -1,7 +1,7 @@
 <template>
-  <Header />
+  <Header/>
 
-  <Maincontent />
+  <Maincontent/>
 </template>
 
 <script>
