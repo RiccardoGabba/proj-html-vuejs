@@ -1,5 +1,5 @@
 <template>
-  <div class=" text-center">
+  <div class="text-center">
     <h2>Welcome To Avada Health</h2>
     <p>
       Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
@@ -15,27 +15,47 @@
     </div>
 
     <div class="bg-secondary">
-      <img src="../../public/Images/icon-5.png" alt="">
+      <img src="../../public/Images/icon-5.png" alt="" />
       <h2>MEET OUR DOCTORS</h2>
-      <hr>
-      <p>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo Inventore Veritatis Et Quasi Architecto Beatae</p>
-    <div class="d-flex align-items-center justify-content-center ">
-      <Doctors 
-        v-for="el in store.Doc"
-        :image="el.image"
-        :name="el.name"
-        :role="el.role"
-        :text="el.text"
-      />
+      <hr />
+      <p>
+        Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
+        Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab
+        Illo Inventore Veritatis Et Quasi Architecto Beatae
+      </p>
+      <div class="d-flex align-items-center justify-content-center">
+        <Doctors
+          v-for="el in store.Doc"
+          :image="el.image"
+          :name="el.name"
+          :role="el.role"
+          :text="el.text"
+        />
+      </div>
     </div>
-    <HealthServices
-    v-for="el in store.Services"
-    :image="el.image"
-    :title="el.title"
-    :text="el.text"
-    />
+    <div>
+      <img src="../../public/Images/icon-6.png" alt="" />
+      <h2>OUR HEALTH SERVICES</h2>
+      <hr />
+      <p>
+        Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
+        Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab
+        Illo Inventore Veritatis Et Quasi Architecto Beatae
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-4" v-for="el in store.Services">
+        <HealthServices 
+        :image="el.image" 
+        :title="el.title" 
+        :text="el.text" />
+      </div>
+    </div>
+
+    
   </div>
-</div>
+
+
 </template>
 
 <script>
@@ -43,7 +63,7 @@ import { store } from "../data/store";
 
 import ServicesComponents from ".//Servicescomponents.vue";
 import Doctors from "../components/Doctors.vue";
-import HealthServices from "../components/HealthServices.vue"
+import HealthServices from "../components/HealthServices.vue";
 
 export default {
   name: "Maincontent",

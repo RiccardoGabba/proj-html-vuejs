@@ -1,5 +1,5 @@
 <template>
-  <div class="col-3 m-4  overflow-hidden  bg-black">
+  <div class="col-3 m-4  overflow-hidden bg-black">
     <img :src="image"/>
     <div class="text-start ">
     <h3>{{ name }}</h3>
