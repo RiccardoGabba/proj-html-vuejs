@@ -1,11 +1,11 @@
 <template>
   <div class="text-center">
-    <h2>Welcome To Avada Health</h2>
-    <p>
+    <h2 class="h1">Welcome To Avada Health</h2>
+    <p class="fs-3 p-5 container">
       Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem Accusantium
       Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab Illo
     </p>
-    <div class="d-flex">
+    <div class="d-flex container mb-5">
       <Welcome
         v-for="el in store.Avada"
         :title="el.title"
@@ -14,11 +14,11 @@
       />
     </div>
 
-    <div class=" text-white">
+    <div class="bg-light">
       <img src="../../public/Images/icon-5.png" alt="" />
       <h2>MEET OUR DOCTORS</h2>
-      <hr />
-      <p>
+      <div class="under-line"></div>
+      <p class="fs-3 container">
         Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
         Accusantium Doloremque Laudantium, Totam Rem Aperiam, Eaque Ipsa Quae Ab
         Illo Inventore Veritatis Et Quasi Architecto Beatae
@@ -46,8 +46,9 @@
     </div>
 
     <div class="row">
-      <div class="col-4" v-for="el in store.Services">
-        <HealthServices :image="el.image" :title="el.title" :text="el.text" />
+      <div class="col-4 " v-for="el in store.Services">
+        <HealthServices 
+        :image="el.image" :title="el.title" :text="el.text" />
       </div>
     </div>
 
@@ -117,4 +118,6 @@ export default {
   padding: 20px;
   margin: 0 auto
 }
+
+
 </style>
