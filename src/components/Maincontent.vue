@@ -53,12 +53,12 @@
       </div>
     </div>
 
-    <div>
-      <VideoFacilities />
+    <div >
+      <VideoFacilities/>
     </div>
     <div class="row">
-      <div class="d-flex  text-center justify-content-around">
-        <Facilities
+      <div class="d-flex  text-center justify-content-around bg-facilities p-5">
+        <Facilities 
           v-for="el in store.Facilities"
           :title="el.title"
           :image="el.image"
@@ -117,5 +117,7 @@ export default {
   margin: 0 auto;
 }
 
-
+.bg-facilities {
+    background-color: rgb(55, 153, 194);
+}
 </style>
