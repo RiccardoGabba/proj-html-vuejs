@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "ServicesComponents",
+  name: "Welcome",
   props: {
     image: String,
     title: String,
